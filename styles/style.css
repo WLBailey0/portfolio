@@ -1,0 +1,104 @@
+body{
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+header{
+    display: flex;
+    min-height: 100px;
+    background-color: #457b9d;
+    border-right: 12em;
+    justify-content: space-around;
+    align-items: center;
+} 
+header div{
+    font-size: 20px;
+}
+.body{
+    display: flex;
+    flex:1;
+
+}
+
+.content{
+    flex: 1;
+    background-color: #f1faee;
+    text-align: center;
+}
+#foot{
+    position: fixed;
+    padding-left: 60%;
+    bottom: 0;
+}
+.nav{
+    flex: 0 0 15%;
+    order: -1;
+    background-color: #1d3557;
+    text-transform: uppercase;
+    display: flex;
+    justify-content:space-evenly;
+    min-width: 300px;
+    
+}
+ .nav h4{
+    text-align: center;
+}
+.links{
+    min-height: 200px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+    
+}
+h4{
+    font-size: 1em;
+}
+.links li a{
+    font-size: 20px;
+    color: #aaae8e;
+}
+
+li.nav-title{
+    font-size: 2em;
+}
+
+ul.links{
+    padding: 0 0 0 0;
+}
+a:hover{
+    font-weight: bolder;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+p.content{
+    border: 5 5 5 5;
+}
+.project{
+    max-width: 400px;
+}
+.projects{
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .body{
+        flex-direction: row;
+        flex: 1;
+    }
+    .content{
+        flex: 1;
+    }
+    .nav{
+        flex: 0 0 12em;
+    }
+}
+ 
